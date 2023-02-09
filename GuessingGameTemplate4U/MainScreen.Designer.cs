@@ -39,28 +39,32 @@
             // 
             this.outputLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(26, 230);
+            this.outputLabel.Location = new System.Drawing.Point(35, 283);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(253, 43);
+            this.outputLabel.Size = new System.Drawing.Size(337, 53);
             this.outputLabel.TabIndex = 9;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guessButton
             // 
-            this.guessButton.Location = new System.Drawing.Point(117, 184);
+            this.guessButton.Location = new System.Drawing.Point(156, 226);
+            this.guessButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guessButton.Name = "guessButton";
-            this.guessButton.Size = new System.Drawing.Size(73, 32);
+            this.guessButton.Size = new System.Drawing.Size(97, 39);
             this.guessButton.TabIndex = 8;
             this.guessButton.Text = "Guess";
             this.guessButton.UseVisualStyleBackColor = true;
             this.guessButton.Click += new System.EventHandler(this.guessButton_Click);
+            this.guessButton.Enter += new System.EventHandler(this.guessButton_Enter);
             // 
             // inputBox
             // 
             this.inputBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputBox.Location = new System.Drawing.Point(132, 141);
+            this.inputBox.Location = new System.Drawing.Point(176, 174);
+            this.inputBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(41, 29);
+            this.inputBox.Size = new System.Drawing.Size(53, 34);
             this.inputBox.TabIndex = 7;
             this.inputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -69,9 +73,10 @@
             this.promptLabel.AutoSize = true;
             this.promptLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.promptLabel.ForeColor = System.Drawing.Color.White;
-            this.promptLabel.Location = new System.Drawing.Point(22, 98);
+            this.promptLabel.Location = new System.Drawing.Point(29, 121);
+            this.promptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.promptLabel.Name = "promptLabel";
-            this.promptLabel.Size = new System.Drawing.Size(257, 21);
+            this.promptLabel.Size = new System.Drawing.Size(319, 28);
             this.promptLabel.TabIndex = 6;
             this.promptLabel.Text = "Enter a Number Between 1 and 100";
             // 
@@ -80,15 +85,16 @@
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(49, 28);
+            this.titleLabel.Location = new System.Drawing.Point(65, 34);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(207, 37);
+            this.titleLabel.Size = new System.Drawing.Size(260, 46);
             this.titleLabel.TabIndex = 5;
             this.titleLabel.Text = "Guessing Game";
             // 
             // MainScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.outputLabel);
@@ -96,8 +102,9 @@
             this.Controls.Add(this.inputBox);
             this.Controls.Add(this.promptLabel);
             this.Controls.Add(this.titleLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainScreen";
-            this.Size = new System.Drawing.Size(300, 300);
+            this.Size = new System.Drawing.Size(400, 369);
             this.ResumeLayout(false);
             this.PerformLayout();
 

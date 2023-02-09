@@ -22,6 +22,9 @@ namespace GuessingGameTemplate4U
         public MainScreen()
         {
             InitializeComponent();
+
+            inputBox.Text = "";
+            inputBox.Focus();
         }
 
         private void guessButton_Click(object sender, EventArgs e)
@@ -30,6 +33,8 @@ namespace GuessingGameTemplate4U
             int guess = Convert.ToInt16(inputBox.Text);
 
             //TODO add guess to List of guesses on Form1
+            Form1.guessList.Add(guess);
+
 
 
             if (guess < rand)
@@ -47,12 +52,19 @@ namespace GuessingGameTemplate4U
                 Thread.Sleep(1000);
 
                 //TODO close this screen and open a Results Screen (you need to create this)
-
+                
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                ResultsScreen rs = new ResultsScreen();
+                f.Controls.Add(rs);
+                rs.Focus();
             }
 
-            inputBox.Text = "";
-            inputBox.Focus();
         }
 
+        private void guessButton_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -18,10 +18,12 @@ namespace GuessingGameTemplate4U
     public partial class Form1 : Form
     {
         //TODO create global list to store user guesses
+        public static List <int> guessList = new List<int>();
 
         public Form1()
         {
             InitializeComponent();
+            Form f = new Form();
         }
 
         private void Form1_Load(object sender, EventArgs e)
